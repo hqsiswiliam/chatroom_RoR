@@ -1,0 +1,17 @@
+div.display
+{
+width:220px;
+height:220px;
+padding:10px;
+border:5px solid gray;
+margin:0px;
+}
+
+input.send_message
+{
+width:220px;
+height:30px;
+padding:10px;
+border:5px solid gray;
+margin:0px;
+}

@@ -1,0 +1,16 @@
+<h1>Chat</h1>
+
+<ul id="chat">
+	<% @messages.each do |message| %>
+        <%= message.username %>:
+        <%= message.message %><br>
+  <% end %>
+</ul>
+
+
+<%= form_for Message.new, remote: true do |f| %>
+	<p>UserName: <%= f.text_field :username %>
+	<br>
+  Message: <%= f.text_field :message %></p>
+  <%= f.submit "Send" %>
+<% end %>
